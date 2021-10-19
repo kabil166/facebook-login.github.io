@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+    color: #1c1e21;
+}
+main{
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+footer{
+    height: 30vh;
+    background-color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Design the logo */
+.logo{
+    flex: 0 0 50%;
+    min-width: 400px;
+}
+.logo h1{
+    font-size: 55px;
+    color: #4267F2;
+}
+.logo p{
+    padding-right: 50px;
+    font-size: 24px;
+}
+
+/* Design the form */
+.login-form{
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.login-form .form-container{
+    background-color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+.login-form .form-container input, .login-form .form-container .log-in{
+    
+    border-radius: .45rem;
+    width: 100%;
+    margin: 5px 0;
+    height: 50px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.login-form .form-container input{
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    padding: 0 8px;
+    outline: none;
+}
+.login-form .form-container input:focus{
+    border-color: #4267B2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+.login-form .form-container .log-in{
+    background-color: #4267F2;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 16px;
+}
+.login-form .form-container .log-in:hover{
+    background-color: #4267C2;
+}
+.login-form .form-container a{
+    display: block;
+    text-decoration: none;
+    color: #4267B2;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #dadde1;
+}
+.login-form .form-container a:hover{
+    text-decoration: underline;
+}
+.login-form .form-container .sign-up{
+    background-color: #42b72a;
+    padding: 15px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: .45rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.login-form .form-container .sign-up:hover{
+    background-color: #00994C;
+}
+.login-form p{
+    font-size: 14px;
+    line-height: 12px;
+}
+.login-form p a{
+    text-decoration: none;
+    color: black;
+}
+.login-form p a:hover{
+    text-decoration: underline;
+}
+/* Design the footer contents */
+.footer-contents{
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+footer ol{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 10px 0;
+}
+footer ol:first-child{
+    border-bottom: 1px solid #dddfe2;  
+}
+footer ol:first-child li:last-child button{
+    background-color: #dddfe2;
+    border: 1px solid black;
+    border-radius: .12rem;
+    outline: none;
+    color: #4b4f56;
+    padding: 0 8px;
+    font-size: 15px;
+    font-weight: 700;
+}
+footer ol li{
+    padding-right: 10px;
+}
+footer ol li a{
+    text-decoration: none;
+    color: #8a9094;
+    font-size: 12px;
+}
+footer ol li a:hover{
+    text-decoration: underline;
+}
+footer small{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 759px) {
+    .container{
+        flex-direction: column;
+    }
+    .logo{
+        width: 400px;
+        text-align: center;
+    }
+    .logo p{
+        min-width: 65%;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+  }
